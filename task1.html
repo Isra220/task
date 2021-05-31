@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+    <style>
+        .container {
+            height: 400px;
+            width: 400px;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px; 
+            background-color: black;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .box3 {
+            width: 100px;
+            height: 100px; 
+            background-color: black;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .box4 {
+            width: 100px;
+            height: 100px; 
+            background-color: black;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .box5 {
+            width: 100px;
+            height: 100px; 
+            position: absolute;
+            top: 45%;
+            right: 38%;
+        }
+
+        p {
+            width: fit-content;
+            position:absolute;
+            top: 28%;
+            left: 32%;
+            background-color: transparent;
+            border: none;
+            color: white;
+        }
+
+        input.center {
+            border: 1px solid black;
+            width: 100%;
+            height: 30px;
+            color: black;
+        }
+
+        #btn {
+            position:absolute;
+            border: 1px solid black;
+            width: 70px;
+            height: 30px;
+            bottom: 0;
+            left: 43%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"><p id="text1"></p></div>
+        <div class="box2"><p id="text2"></p></div>
+        <div class="box3"><p id="text3"></p></div>
+        <div class="box4"><p id="text4"></p></div>
+        <div class="box5"><input type="text"  id="center-text" class="center"></div>
+        <button id="btn" onclick="myFunction1(); myFunction2(); myFunction3(); myFunction4()">Click</button>
+    </div>
+
+    <script>
+        function myFunction1() {
+            var x = document.getElementById("center-text").value;
+            document.getElementById("text1").innerHTML = x;
+        }
+
+        function myFunction2() {
+            var x = document.getElementById("center-text").value;
+            document.getElementById("text2").innerHTML = x;
+        }
+
+        function myFunction3() {
+            var x = document.getElementById("center-text").value;
+            document.getElementById("text3").innerHTML = x;
+        }
+
+        function myFunction4() {
+            var x = document.getElementById("center-text").value;
+            document.getElementById("text4").innerHTML = x;
+        }
+        </script>
+</body>
+</html>
